@@ -13,7 +13,7 @@ public class Gradle {
         log(((org.jsoup.nodes.Document) doc).title());
         Elements newsHeadlines1 = ((org.jsoup.nodes.Document) doc).select(".CurrentConditions--location--kytel");
         Elements newsHeadlines2 = ((org.jsoup.nodes.Document) doc).select(".CurrentConditions--tempValue--3a50n");
-        Elements newsHeadlines3 = ((org.jsoup.nodes.Document) doc).select(".CurrentConditions--location--kytel");
+        Elements newsHeadlines3 = ((org.jsoup.nodes.Document) doc).select(".CurrentConditions--phraseValue--kytel");
         for (Element headline : newsHeadlines1) {
             System.out.println(headline.html());
         }
